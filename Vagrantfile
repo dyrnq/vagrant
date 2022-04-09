@@ -11,7 +11,7 @@ NODE_IP_NW   = "192.168.19."
 Vagrant.configure("2") do |config|
   config.vm.box = "debian/bullseye64"
   #config.vm.box = "ubuntu/focal64"
-  config.vm.box_check_update = true
+  config.vm.box_check_update = false
   config.ssh.insert_key = false
   config.ssh.private_key_path = "insecure_private_key"
   # config.ssh.username = "vagrant"
