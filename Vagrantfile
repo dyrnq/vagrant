@@ -13,6 +13,7 @@ Vagrant.configure("2") do |config|
   #config.vm.box = "ubuntu/focal64"
   config.vm.box_check_update = false
   config.ssh.insert_key = false
+  # insecure_private_key download from https://github.com/hashicorp/vagrant/blob/master/keys/vagrant
   config.ssh.private_key_path = "insecure_private_key"
   # config.ssh.username = "vagrant"
   # config.ssh.password = "vagrant"
